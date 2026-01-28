@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diseases>
+    <disease>
+        <name>Diabetes</name>
+        <cause>Insufficient insulin production</cause>
+    </disease>
+    <disease>
+        <name>Malaria</name>
+        <cause>Bite of infected mosquito</cause>
+    </disease>
+    <disease>
+        <name>Tuberculosis</name>
+        <cause>Bacterial infection of lungs</cause>
+    </disease>
+</diseases>

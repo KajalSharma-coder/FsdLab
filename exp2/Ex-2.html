@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Webpage</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style2.css">
+
+  <!-- Internal CSS -->
+  <style>
+    h2 {
+      color: #1e3a8a;
+    }
+
+    form {
+      margin-top: 15px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #2563eb;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1e40af;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Swami Keshvanand Institute of Technology</h1>
+    <p>Student Information Portal</p>
+  </header>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Content Card -->
+  <div class="card">
+    <h2>Student Registration Form</h2>
+
+    <form>
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email">
+
+      <label>Course:</label>
+      <select>
+        <option>Select Course</option>
+        <option>B.Tech</option>
+        <option>M.Tech</option>
+        <option>MBA</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 SKIT College. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

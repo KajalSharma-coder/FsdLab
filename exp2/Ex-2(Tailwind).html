@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind Webpage</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style3.css">
+
+  <!-- Internal CSS -->
+  <style>
+    .heading {
+      letter-spacing: 2px;
+    }
+
+    .highlight {
+      background-color: #fef3c7;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-6 text-center">
+    <h1 class="text-3xl font-bold heading">Swami Keshvanand Institute of Technology</h1>
+    <p class="mt-1">Student Information Portal</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow flex justify-between px-8 py-3">
+    <span class="font-semibold text-lg">College Portal</span>
+
+    <!-- Dropdown -->
+    <div class="relative group">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">
+        Menu
+      </button>
+
+      <div class="absolute right-0 hidden group-hover:block bg-white shadow-lg mt-2 rounded w-40">
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">About</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- About Card -->
+    <div class="custom-box bg-white p-6 shadow">
+      <h2 class="text-xl font-semibold mb-3">About Us</h2>
+      <p class="text-gray-600 highlight p-2 rounded">
+        We provide quality education with practical exposure.
+      </p>
+    </div>
+
+    <!-- Form Card -->
+    <div class="custom-box bg-white p-6 shadow">
+      <h2 class="text-xl font-semibold mb-4">Student Registration</h2>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block mb-1">Name</label>
+          <input type="text" class="w-full border p-2 rounded" placeholder="Enter your name">
+        </div>
+
+        <div>
+          <label class="block mb-1">Email</label>
+          <input type="email" class="w-full border p-2 rounded" placeholder="Enter your email">
+        </div>
+
+        <div>
+          <label class="block mb-1">Course</label>
+          <select class="w-full border p-2 rounded">
+            <option>Select Course</option>
+            <option>B.Tech</option>
+            <option>M.Tech</option>
+            <option>MBA</option>
+          </select>
+        </div>
+
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          Submit
+        </button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center p-4 mt-6">
+    <p class="footer-text">© 2026 SKIT College. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
